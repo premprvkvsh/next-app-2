@@ -6,6 +6,7 @@ async function getUserData(){
   
 }
 
+//async componets
 export default async function Home(){
   const userDetails = await getUserData();
 
