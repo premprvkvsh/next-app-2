@@ -5,3 +5,15 @@ async function getUserData(){
     return response.data;
   
 }
+
+export default async function Home(){
+  const userDetails = await getUserData();
+
+  return (
+    <div>
+      hi there
+      {userDetails.email}
+      {userDetails.name}
+    </div>
+  );
+}
