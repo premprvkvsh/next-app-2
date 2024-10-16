@@ -1,6 +1,8 @@
 import axios from "axios";
 
 async function getUserData(){
+
+  // accesing their own backend
   const response = await axios.get("http://localhost:3000/api/user")
   
     return response.data;
